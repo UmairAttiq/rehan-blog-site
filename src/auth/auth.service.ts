@@ -197,7 +197,7 @@ export class AuthService {
       .createHash('sha256')
       .update(randomStringGenerator())
       .digest('hex');
-
+console.log("testing11222")
     await this.usersService.create({
       ...dto,
       email: dto.email,
